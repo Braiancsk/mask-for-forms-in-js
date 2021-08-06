@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Landing Page</title>
+    <link rel="shortcut icon" type="image-x/png" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<div class="container">
+    <!-- Título !-->
+    <div class="row m-4">
+      <div class="col-12 text-center">
+        <a class="border-bottom h1 text-decoration-none text-dark">Carrinho</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 border shadow-lg rounded mb-3 p-4">
+        <form action="pagamento" method="post">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="nome">Nome Completo</label>
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Ex: Giovanni Pedro Henrique André da Mata" required>
+            </div>
+            <div class="col-md-6">
+              <label for="cpf" class="form-label">CPF</label>
+              <input type="text" name="cpf" maxlength="14" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" id="cpf" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Ex: a@a.com" required>
+            </div>
+            <div class="col-md-12">
+              <label for="senha">Senha</label>
+              <input type="password" name="senha" class="form-control" id="email" placeholder="****" required>
+            </div>
+  
+            <div class="col-md-1">
+              <label for="validationCustom05" class="form-label">DDD</label>
+              <input type="text" name="ddd" maxlength="2" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" required>
+
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Telefone</label>
+              <input type="text" name="telefone" id="phone" class="form-control" required>
+
+            </div>
+
+            <div class="col-md-4">
+              <label for="validationCustom04" class="form-label">Pais</label>
+              <select class="form-select" name="pais" id="validationCustom04" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="BRA">Brasil</option>
+              </select>
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom04" class="form-label">Estado</label>
+              <select class="form-select" name="estado" id="validationCustom04" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="ac">Acre (AC)</option>
+                <option value="al">Alagoas (AL)</option>
+                <option value="ap">Amapá (AP)</option>
+                <option value="am">Amazonas (AM)</option>
+                <option value="ba">Bahia (BA)</option>
+                <option value="ce">Ceará (CE)</option>
+                <option value="df">Distrito Federal (DF)</option>
+                <option value="es">Espírito Santo (ES)</option>
+                <option value="go">Goiás (GO)</option>
+                <option value="ma">Maranhão (MA)</option>
+                <option value="mt">Mato Grosso (MT)</option>
+                <option value="ms">Mato Grosso do Sul (MS)</option>
+                <option value="mg">Minas Gerais (MG)</option>
+                <option value="pa">Pará (PA)</option>
+                <option value="pb">Paraíba (PB)</option>
+                <option value="pr">Paraná (PR)</option>
+                <option value="pe">Pernambuco (PE)</option>
+                <option value="pi">Piauí (PI)</option>
+                <option value="rj">Rio de Janeiro (RJ)</option>
+                <option value="rn">Rio Grande do Norte (RN)</option>
+                <option value="rs">Rio Grande do Sul (RS)</option>
+                <option value="ro">Rondônia (RO)</option>
+                <option value="rr">Roraima (RR)</option>
+                <option value="sc">Santa Catarina (SC)</option>
+                <option value="sp">São Paulo (SP)</option>
+                <option value="se">Sergipe (SE)</option>
+                <option value="to">Tocantins (TO)</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">CEP</label>
+              <input type="text" name="cep" id="cep" maxlength="9" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Cidade</label>
+              <input type="text" name="cidade" class="form-control" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom03" class="form-label">Bairro</label>
+              <input type="text" name="bairro" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom03" class="form-label">Rua</label>
+              <input type="text" name="rua" class="form-control" id="validationCustom03" required>
+            </div>
+
+            <div class="col-md-1">
+              <label for="validationCustom03" class="form-label">Quadra</label>
+              <input type="text" name="quadra" class="form-control" id="validationCustom03" required>
+            </div>
+
+            <div class="col-md-1">
+              <label for="validationCustom05" class="form-label">N/Lt</label>
+              <input type="text" name="nlt" class="form-control" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom05" class="form-label">Complemento</label>
+              <input type="text" name="complemento" class="form-control" required>
+            </div>
+
+            <div class="mt-3 mb-3">
+              <label for="plano">Plano</label><br>
+              <select name="plano" id="plano" class="form-select" required>
+                <option value="1">Plano Bronze - R$ 19,90</option>
+                <option value="2">Plano Prata - R$ 29,90</option>
+                <option value="3">Plano Ouro - R$ 59,90</option>
+              </select>
+
+            </div>
+            <div class="col-md-12">
+              <input type="submit" value="COMPRAR" class="btn btn-success fw-bold w-100">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<script>
+      function maskNumber(){
+    document.getElementById('phone').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,0})(\d{0,5})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : ' ' + x[2] + (x[3] ? '-' + x[3] : '');
+      });
+  }
+
+  function maskCfp(){
+    document.getElementById('cpf').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,3})(\d{0,3})(\d{0,2})/);
+        e.target.value = !x[2] ? x[1] : '' + x[1] + '.' + x[2] + (x[3] ? '.' + x[3] : '') + (x[4] ? '-' + x[4] : '');
+      });
+  }
+
+  function maskCep(){
+    document.getElementById('cep').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,2})/);
+        e.target.value = !x[2] ? x[1] : '' + x[1] + x[2] + (x[3] ? '-' + x[3] : '');
+      });
+  }
+
+  
+  function initApps(){
+      maskNumber();
+      maskCfp();
+      maskCep();
+  }
+
+  initApps();
+</script>
+
+
+
+
+</body>
+</html>
